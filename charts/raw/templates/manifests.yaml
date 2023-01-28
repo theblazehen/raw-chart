@@ -1,4 +1,4 @@
 {{- range $manifest := .Values.manifests }}
-{{ tpl (toYaml $manifest) . }}
+{{ tpl (toYaml $manifest) $. }}
 ---
 {{ end }}
